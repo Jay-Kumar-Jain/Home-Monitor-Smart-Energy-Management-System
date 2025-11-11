@@ -56,42 +56,6 @@ Hardware ESP32 / ESP8266 / Raspberry Pi
 Communication HTTP REST (JSON over Wi-Fi)
 Build Tools Maven
 IDE IntelliJ IDEA / Eclipse / VS Code / Arduino IDE
-🖥️ Folder Structure
-home-monitor/
-├── backend/
-│ ├── src/main/java/com/home/monitor/
-│ │ ├── controller/
-│ │ │ ├── ApplianceController.java
-│ │ │ └── HomeController.java
-│ │ ├── model/
-│ │ │ └── Appliance.java
-│ │ ├── service/
-│ │ │ ├── ApplianceService.java
-│ │ │ └── AnalyticsService.java
-│ │ └── HomeMonitorApplication.java
-│ ├── src/main/resources/application.properties
-│ └── pom.xml
-│
-├── client/
-│ ├── src/main/java/com/home/client/
-│ │ ├── HomeClientApp.java
-│ │ ├── controllers/
-│ │ │ ├── DashboardController.java
-│ │ │ ├── AnalyticsController.java
-│ │ │ └── AutomationController.java
-│ │ ├── models/
-│ │ │ └── Appliance.java
-│ │ ├── services/
-│ │ │ ├── DataStore.java
-│ │ │ └── ApplianceService.java
-│ ├── src/main/resources/ui/
-│ │ ├── dashboard.fxml
-│ │ ├── analytics.fxml
-│ │ ├── automation.fxml
-│ │ └── style.css
-│ └── pom.xml
-│
-└── README.md
 
 🪄 Installation & Setup
 🧱 1️⃣ Prerequisites
