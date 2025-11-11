@@ -1,0 +1,8 @@
+com\home\client\DataStore.class
+com\home\client\HomeClientApp.class
+com\home\client\MainLayoutController.class
+com\home\client\AnalyticsController.class
+com\home\client\ApplianceService.class
+com\home\client\AutomationController.class
+com\home\client\DashboardController.class
+com\home\client\Appliance.class

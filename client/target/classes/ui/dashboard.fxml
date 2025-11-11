@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.home.client.DashboardController"
+      spacing="15" style="-fx-background-color: #ffffff;">
+    
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+
+    <HBox spacing="40">
+        <Label fx:id="totalPowerLabel" text="Total Power: 0 W" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Label fx:id="costPredictionLabel" text="Predicted Monthly Cost: ₹0.00" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <FlowPane fx:id="appliancePane" hgap="10" vgap="10" style="-fx-background-color: #f9fafb; -fx-background-radius: 8;">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+    </FlowPane>
+    
+    <LineChart fx:id="powerChart" title="Live Power Usage (W)" prefHeight="350" prefWidth="900">
+        <xAxis><NumberAxis label="Time (s)"/></xAxis>
+        <yAxis><NumberAxis label="Power (W)"/></yAxis>
+    </LineChart>
+</VBox>

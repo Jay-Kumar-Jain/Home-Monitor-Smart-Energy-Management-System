@@ -1,0 +1,5 @@
+com\home\monitor\model\Appliance.class
+com\home\monitor\service\ApplianceService.class
+com\home\monitor\controller\ApplianceController.class
+com\home\monitor\service\AnalyticsService.class
+com\home\monitor\HomeMonitorApplication.class

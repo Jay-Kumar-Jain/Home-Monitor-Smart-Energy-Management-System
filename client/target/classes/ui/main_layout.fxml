@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.home.client.MainLayoutController"
+            fx:id="rootPane">
+
+    <top>
+        <HBox spacing="8" style="-fx-background-color: #f3f4f6;">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Dashboard" onAction="#showDashboard"/>
+            <Button text="Analytics" onAction="#showAnalytics"/>
+            <Button text="Automation" onAction="#showAutomation"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Refresh" onAction="#refreshData"/>
+        </HBox>
+    </top>
+
+    <center>
+        <fx:include source="dashboard.fxml"/>
+    </center>
+</BorderPane>

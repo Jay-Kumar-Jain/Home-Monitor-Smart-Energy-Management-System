@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.home.client.AnalyticsController"
+      spacing="15" style="-fx-background-color: #ffffff;">
+    
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+    <PieChart fx:id="energyPieChart" title="Energy Consumption Breakdown" prefHeight="250"/>
+    <BarChart fx:id="usageBarChart" title="Weekly Usage Trend" prefHeight="300">
+        <xAxis><CategoryAxis label="Days"/></xAxis>
+        <yAxis><NumberAxis label="kWh"/></yAxis>
+    </BarChart>
+</VBox>
